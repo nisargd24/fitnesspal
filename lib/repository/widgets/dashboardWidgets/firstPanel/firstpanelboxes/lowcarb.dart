@@ -1,5 +1,5 @@
 import 'package:fitnesspal/repository/widgets/card/card.dart';
-import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/linearbarwidget.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/linearbarwidget.dart';
 import 'package:flutter/material.dart';
 
 class LowcarbPanel extends StatelessWidget {

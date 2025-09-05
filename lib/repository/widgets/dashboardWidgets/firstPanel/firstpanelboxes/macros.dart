@@ -1,5 +1,5 @@
 import 'package:fitnesspal/repository/widgets/card/card.dart';
-import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/circleprogressindicator.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/circleprogressindicator.dart';
 import 'package:flutter/material.dart';
 
 class MacrosPanel extends StatelessWidget {

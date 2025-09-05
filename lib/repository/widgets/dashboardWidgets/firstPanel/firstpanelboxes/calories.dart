@@ -1,6 +1,6 @@
 import 'package:fitnesspal/repository/widgets/card/card.dart';
-import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/caloriepaneliconandtext.dart';
-import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/circleprogressindicator.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/caloriepaneliconandtext.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/circleprogressindicator.dart';
 import 'package:flutter/material.dart';
 
 class CaloriesPanel extends StatelessWidget {
@@ -48,7 +48,7 @@ class CaloriesPanel extends StatelessWidget {
                       centretextfontsize: 25,
                       radius: 65,
                       lineWidth: 10,
-                      percent: 0.0,
+                      percent: 0.4,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

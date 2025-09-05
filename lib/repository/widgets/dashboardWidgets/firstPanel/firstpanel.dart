@@ -19,16 +19,27 @@ class _FirstPanelState extends State<FirstPanel> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // 🔹 Horizontal scroll with snapping
         SizedBox(
           height: 250,
           child: PageView(
             controller: _controller,
             children: const [
-              CaloriesPanel(),
-              MacrosPanel(),
-              HeartHealthyPanel(),
-              LowcarbPanel(),
+              Padding(
+                padding: EdgeInsets.only(right: 3.0, left: 3.0),
+                child: CaloriesPanel(),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 3.0, left: 3.0),
+                child: MacrosPanel(),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 3.0, left: 3.0),
+                child: HeartHealthyPanel(),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 3.0, left: 3.0),
+                child: LowcarbPanel(),
+              ),
             ],
           ),
         ),
