@@ -41,7 +41,7 @@ class HeartHealthyPanel extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 LinearBarWidget(
-                  percent: 0.5,
+                  percent: 0.8,
                   label: "Sodium",
                   goal: "2300mg",
                   current: "0",
@@ -49,7 +49,7 @@ class HeartHealthyPanel extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 LinearBarWidget(
-                  percent: 0.5,
+                  percent: 0.4,
                   label: "Cholestrol",
                   goal: "300mg",
                   current: "0",

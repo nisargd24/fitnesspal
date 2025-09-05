@@ -33,7 +33,7 @@ class LowcarbPanel extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 LinearBarWidget(
-                  percent: 0.5,
+                  percent: 0.7,
                   label: "Carbohydrates",
                   goal: "274g",
                   current: "0",
@@ -49,7 +49,7 @@ class LowcarbPanel extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 LinearBarWidget(
-                  percent: 0.5,
+                  percent: 0.2,
                   label: "Fiber",
                   goal: "38g",
                   current: "0",

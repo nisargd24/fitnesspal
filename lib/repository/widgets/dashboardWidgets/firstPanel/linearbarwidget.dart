@@ -44,7 +44,7 @@ class LinearBarWidget extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 0.8,
           animateFromLastPercent: true,
           animation: true,
-          percent: 0.0,
+          percent: percent,
           backgroundColor: Colors.black87,
           progressColor: progressColor,
           barRadius: Radius.circular(7),
