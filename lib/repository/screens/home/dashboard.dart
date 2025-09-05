@@ -1,7 +1,7 @@
 import 'package:fitnesspal/repository/screens/notification/notificationscreen.dart';
 import 'package:fitnesspal/repository/screens/profile/profile.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/editbutton.dart';
-import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstPanel.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -136,17 +136,7 @@ class Dashboard extends StatelessWidget {
             ),
           ),
 
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 220,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.all(0),
-                itemBuilder: (context, index) =>
-                    SizedBox(child: Row(children: [const FirstPanel()])),
-              ),
-            ),
-          ),
+          SliverToBoxAdapter(child: FirstPanel()),
         ],
       ),
     );
