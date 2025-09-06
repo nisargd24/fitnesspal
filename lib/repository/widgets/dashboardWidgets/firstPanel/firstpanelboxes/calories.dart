@@ -1,6 +1,8 @@
 import 'package:fitnesspal/repository/widgets/card/card.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/caloriepaneliconandtext.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstpanelboxes/firstpanelwidgets/circleprogressindicator.dart';
+import 'package:fitnesspal/repository/widgets/headingtext.dart';
+import 'package:fitnesspal/repository/widgets/subheadingtext.dart';
 import 'package:flutter/material.dart';
 
 class CaloriesPanel extends StatelessWidget {
@@ -14,25 +16,15 @@ class CaloriesPanel extends StatelessWidget {
       },
       child: CustomCard(
         height: double.infinity,
-        width: MediaQuery.of(context).size.width * 0.95,
+        width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             // Title
-            Text(
-              "Calories",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            HeadingText(heading: "Calories"),
             SizedBox(height: 3),
-            Text(
-              "Remaining = Goal -Food + Exercise",
-              style: TextStyle(color: Colors.white70, fontSize: 14),
-            ),
+            SubHeadingText(subHeading: "Remaining = Goal -Food + Exercise"),
             SizedBox(height: 8),
             Center(
               child: Padding(

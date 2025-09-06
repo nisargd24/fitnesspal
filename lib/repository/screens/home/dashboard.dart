@@ -2,6 +2,7 @@ import 'package:fitnesspal/repository/screens/notification/notificationscreen.da
 import 'package:fitnesspal/repository/screens/profile/profile.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/editbutton.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstPanel.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/habitPanel/habitPanel.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -130,13 +131,19 @@ class Dashboard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  EditButton(),
+                  EditButton(
+                    buttonText: "Edit",
+                    onPressed: () {
+                      // Handle edit button press
+                    },
+                  ),
                 ],
               ),
             ),
           ),
 
           SliverToBoxAdapter(child: FirstPanel()),
+          SliverToBoxAdapter(child: HabitPanel()),
         ],
       ),
     );

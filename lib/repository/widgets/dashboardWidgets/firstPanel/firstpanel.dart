@@ -21,26 +21,32 @@ class _FirstPanelState extends State<FirstPanel> {
       children: [
         SizedBox(
           height: 250,
-          child: PageView(
-            controller: _controller,
-            children: const [
-              Padding(
-                padding: EdgeInsets.only(right: 3.0, left: 3.0),
-                child: CaloriesPanel(),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 3.0, left: 3.0),
-                child: MacrosPanel(),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 3.0, left: 3.0),
-                child: HeartHealthyPanel(),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 3.0, left: 3.0),
-                child: LowcarbPanel(),
-              ),
-            ],
+          width: double.infinity,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: PageView(
+              padEnds: false,
+
+              controller: _controller,
+              children: const [
+                Padding(
+                  padding: EdgeInsets.only(right: 2.0, left: 0.0),
+                  child: CaloriesPanel(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 2.0, left: 2.0),
+                  child: MacrosPanel(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 2.0, left: 2.0),
+                  child: HeartHealthyPanel(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 8.0, left: 2.0),
+                  child: LowcarbPanel(),
+                ),
+              ],
+            ),
           ),
         ),
 

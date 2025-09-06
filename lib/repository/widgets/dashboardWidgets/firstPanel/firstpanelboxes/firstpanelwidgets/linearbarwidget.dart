@@ -41,7 +41,6 @@ class LinearBarWidget extends StatelessWidget {
         SizedBox(height: 6),
         LinearPercentIndicator(
           lineHeight: 12.0,
-          width: MediaQuery.of(context).size.width * 0.78,
           animateFromLastPercent: true,
           animation: true,
           percent: percent,
