@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class HeadingText extends StatelessWidget {
   final String heading;
-  
-  const HeadingText({super.key, required this.heading});
+  final double fontSize;
+
+  const HeadingText({super.key, required this.heading, this.fontSize = 22});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class HeadingText extends StatelessWidget {
       heading,
       style: TextStyle(
         color: Colors.white,
-        fontSize: 22,
+        fontSize: fontSize,
         fontWeight: FontWeight.bold,
       ),
     );
