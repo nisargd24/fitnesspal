@@ -4,7 +4,9 @@ import 'package:fitnesspal/repository/widgets/card/card.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/editbutton.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/firstPanel/firstPanel.dart';
 import 'package:fitnesspal/repository/widgets/dashboardWidgets/habitPanel/habitPanel.dart';
+import 'package:fitnesspal/repository/widgets/dashboardWidgets/thirdpanel/thirdpanel.dart';
 import 'package:fitnesspal/repository/widgets/headingtext.dart';
+import 'package:fitnesspal/repository/widgets/subheadingtext.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -319,6 +321,7 @@ class Dashboard extends StatelessWidget {
               ),
             ),
           ),
+          SliverToBoxAdapter(child: ThirdPanel()),
         ],
       ),
     );
